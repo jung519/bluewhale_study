@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body { background-color: #000058bd; }
+    .signUp {
+      width: 400px;
+      margin: 30px auto auto auto;
+    }
+    .body{ 
+      background-color: white; 
+      padding: 20px;
+    }
+    .header{
+      text-align: center;
+    }
+    .title { margin: auto }
+    .subTitle{ margin: 10px auto auto auto; font-weight: 600; }
+    .items {
+      margin-top: 10px;
+    }
+    .items label{
+      color: gray;
+      font-weight: 600;
+    }
+    input {
+      width: 99%;
+      margin-bottom: 10px;
+      height: 30px;
+    }
+    .signUp_btn {
+      width: 100%;
+      height: 40px;
+      color: white;
+      font-weight: 600;
+      background-color:#68bc68;
+      border: none;
+    }
+    .agree { text-align: center; margin-top: 30px; }
+    .agree p {font-weight: 500; margin-bottom: 0px;}
+    .agree .policy {color: blue; margin-bottom: 0px; margin-top: 5px;}
+    .footer { text-align: center; font-weight: 600; }
+    .footer p {color: white;}
+    .footer span{ color: #68bc68; }
+  </style>
+</head>
+<body>
+  <div class="signUp">
+    <div class="body">
+      <div class="header">
+        <h1 class="title">Sign Up</h1>
+        <p class="subTitle">It's free and only takes a minute</p>
+      </div>
+      <div class="items">
+        <label for="">First Name</label>
+        <br />
+        <input type="text" />
+      </div>
+      <div class="items">
+        <label for="">Last Name</label>
+        <br />
+        <input type="text" />
+      </div>
+      <div class="items">
+        <label for="">Email</label>
+        <br />
+        <input type="text" />
+      </div>
+      <div class="items">
+        <label for="">Password</label>
+        <br />
+        <input type="password">
+      </div>
+      <div class="items">
+        <label for="">Confirm Password</label>
+        <br />
+        <input type="password">
+      </div>
+      <button class="items signUp_btn">Sign Up</button>
+      <div class="agree">
+        <p class="items">By clicking the Sign Up button, you agree to our</p>
+        <p class="policy">Terms & Conditions and Privacy Policy</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Already have an account? <span>Login Here</span></p>
+    </div>
+  </div>
+</body>
+</html>
