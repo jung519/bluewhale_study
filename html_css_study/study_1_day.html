@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body { background-color: #2f2588; }
+    .signUp { width: 400px; margin: 20px auto 0px auto; }
+    .signUp .signUp_body { padding: 20px; background-color: white; }
+    .signUp .signUp_body .signUp_title .title { text-align: center; }
+    .signUp .signUp_body .signUp_title .subTitle {text-align: center;}
+    .signUp .signUp_body .items {margin: 0px 0px 10px 0px;}
+    .signUp .signUp_body .items label { display: block; font-size: 20px; font-weight: 400; color: gray;}
+    .signUp .signUp_body .items input { width: 99%; height: 25px;}
+    .signUp .signUp_body button {color: white; background-color: green; width: 100%; height: 25px; border: 0px; padding: 0px;}
+    .signUp .signUp_body button:hover {background-color: #122f13;}
+    .signUp .signUp_body .signUp_agree {font-size: 15px; text-align: center;}
+    .signUp .signUp_body .signUp_agree a {color: blue; cursor: pointer;}
+    .signUp .signUp_footer {font-size: 20px; font-weight: 400; color: white; text-align: center}
+    .signUp .signUp_footer span {color: green; cursor: pointer;}
+  </style>
+</head>
+<body>
+  <div class="signUp">
+    <div class="signUp_body">
+      <div class="signUp_title">
+        <h1 class="title">Sign Up</h1>
+        <p class="subTitle">It's free and only takes a minute</p>
+      </div>
+      <div class="items">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" />
+      </div>
+      <div class="items">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName"/>
+      </div>
+      <div class="items">
+        <label for="email">Email</label>
+        <input type="text" id="email"/>
+      </div>
+      <div class="items">
+        <label for="password">Password</label>
+        <input type="text" id="password"/>
+      </div>
+      <div class="items">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="text" id="confirmPassword"/>
+      </div>
+      <button>Sign up</button>
+      <div class="signUp_agree">
+        <p>By clicking the Sign Up button. you agree to our<br />
+          <a>Terms & Conditions</a> and <a>Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+    <div class="signUp_footer">
+      <p>Already have an account? <span>Login Here</span></p>
+    </div>
+  </div>
+</body>
+</html>
