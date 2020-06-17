@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .header {
+      position: fixed;
+      width: 100%;
+      background-color: gray;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header .logo {
+      margin: 30px;
+    }
+
+    .header .nav_group {
+      margin: 30px 10px;
+      display: flex;
+
+    }
+
+    .header .nav_group div {
+      margin: 0px 10px;
+    }
+
+    .top {
+      background: transparent;
+    }
+
+    .title {
+      height: 1000px;
+      background-color: lightskyblue;
+    }
+
+    .body {
+      height: 1000px;
+      background-color: lightpink;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav" class="header">
+    <div class="logo">Logo</div>
+    <div class="nav_group">
+      <div>Home</div>
+      <div>About</div>
+      <div>Cases</div>
+    </div>
+  </div>
+  <div class="title">title</div>
+  <div class="body">body</div>
+  <div class="footer">footer</div>
+
+  <script>
+    var nav = document.getElementById('nav');
+
+    window.onscroll = () => {
+      var a = window.pageYOffset
+      if (a > 70) {
+        nav.classList.add('top')
+      } else {
+        nav.classList.remove('top')
+      }
+    }
+  </script>
+</body>
+
+</html>
